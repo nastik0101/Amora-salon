@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #D9D9D9;
+}
+
+.header {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+.left {
+    width: 40%; /* було 50%, тепер менше */
+    background-color: #f3f3f3;
+    padding: 100px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo {
+    margin-bottom: 20px;
+}
+
+
+.intro-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px; /* трохи відступ від низу */
+}
+
+.headline {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px; /* додано реальний відступ */
+}
+
+.sign-up {
+    background: linear-gradient(to bottom, #ddd, #bbb);
+    border: none;
+    padding: 30px 62px;
+    border-radius: 25px;
+    font-size: 25px;
+    color: #555;
+    margin-bottom: 30px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.sign-up:hover {
+    background-color: #aaa;
+    color: white;
+}
+
+.subtext {
+    font-size: 16px;
+    color: #444;
+}
+
+.right-panel{
+    width: 80%; /* стало більше */
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.hero-image {
+    background-size: cover;
+    background-position: right center; /* картинка зміщена правіше */
+    width: 100%;
+    height: 100%;
+}
+
+
+.nav-menu {
+    position: absolute;
+    top: 40px;
+    right: 60px;
+    z-index: 2;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #c33d78;
+
+    .content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.welcome {
+  flex: 1 1 300px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  max-width: 350px;
+  border-left: 3px solid #bcbcbc;
+}
+
+.welcome h3 {
+  font-family: 'Georgia', serif;
+  font-size: 20px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+}
+
+.welcome p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.images {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.photo {
+  max-width: 250px;
+  width: 100%;
+  border-radius: 6px;
+  object-fit: cover;
+}

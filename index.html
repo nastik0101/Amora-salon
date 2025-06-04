@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amora</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body> 
+
+<header>
+
+  <div class="logo-mob">
+    <img src="53.png" alt="Amora logo" class="logo" width="200" height="77" />
+  </div>
+
+  <div class="container">
+    <div class="left">
+     <div class="logo_media">  <img src="53.png" alt="Amora logo" class="logo" width="200" height="90" /></div>
+      <div class="intro-text">
+        <h1 class="headline">Amora<br><span>салон краси у Львові</span></h1>
+
+       <a href="#bookingModal" class="sign-up">ЗАПИСАТИСЬ</a>
+
+        <p class="subtext">Ви прекрасні,<br>а ми просто підкреслюємо це!</p>
+      </div>
+    </div>
+
+<div class="hamburger-menu">
+    <input id="menu__toggle" type="checkbox" />
+    <label class="menu__btn" for="menu__toggle">
+      <span></span>
+    </label>
+  
+    <ul class="menu__box">
+      <li><a class="menu__item" href="#blog">Блог</a></li>
+      <li><a class="menu__item" href="#services">Послуги</a></li>
+      <li><a class="menu__item" href="#gallery">Галерея</a></li>
+      <li><a class="menu__item" href="#shares">Акції</a></li>
+      <li><a class="menu__item" href="#contacts">Контакти</a></li>
+    </ul>
+  </div>
+
+    <div class="right-panel">
+       <nav class="nav-menu">
+    <a href="#blog">Блог</a>
+    <a href="#services">Послуги</a>
+    <a href="#gallery">Галерея</a>
+    <a href="#shares">Акції</a>
+    <a href="#contacts">Контакти</a>
+  </nav>
+     
+     </div>
+  </div>
+
+
+<!-- Фонове відео для великих екранів -->
+<div class="video-background">
+  <video class="help-video" autoplay muted loop playsinline>
+    <source src="amora.mp4" type="video/mp4" />
+    Ваш браузер не підтримує відео.
+  </video>
+</div>
+
+
+<!-- кнопка -->
+<section id="bookingModal" class="modal">
+  <div class="modal-overlay"></div>
+  <div class="modal-content">
+    <button class="modal-close" onclick="location.hash=''; return false;">×</button>
+    <form action="form_submit.php" method="post">
+      <h2>Заплануйте візит на зручний час</h2>
+      
+      <label for="name">Ваше ім'я:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="service">Оберіть послугу:</label>
+      <select id="service" name="service" required>
+        <option value="">-- Виберіть --</option>
+        <option value="Манікюр">Манікюр</option>
+        <option value="Стрижка">Стрижка</option>
+        <option value="Макіяж">Макіяж</option>
+        <option value="Макіяж">Косметологія</option>
+      </select>
+
+      <label for="date">Дата:</label>
+      <input type="date" id="date" name="date" required>
+
+      <label for="phone">Номер телефону:</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <button type="submit">Надіслати</button>
+    </form>
+  </div>
+</section>
+
+  
+
+</header>
+</html>
+
+   <section id="blog"> 
+<main class="about">
+    <hr class="hrrr">
+    <h2>Про нас</h2>
+    <hr class="hrrr">
+    <h3>Amora – місце, де краса поєднується з гармонією</h3>
+    <p>
+        У самому серці гармонії та догляду народився салон <strong>Amora</strong> – місце, де краса розкривається через любов до себе.<br><br>
+        Слово “Amora” має глибоке значення. Воно походить від латинського “amor”, що означає “любов”.
+        У стародавні часи так називали тих, хто дарував натхнення та ніжність, хто вмів підкреслити природну чарівність людини.
+    </p>
+<main>
+ 
+<section class="welcome-block">
+  <div class="welcome-text">
+    <h4>Welcome to Amora</h4>
+    <hr>
+    <p>
+      Ви будете здивовані від легкості вибору, адже у Amora кожна процедура створена для вашого задоволення. Тут не потрібно вагатися — достатньо довіритися професіоналам і просто насолоджуватися моментом. Ми подбаємо про все, щоб ви відчули себе впевнено, доглянуто та натхненно після кожного візиту.
+    </p>
+  </div>
+
+  <div class="welcome-images">
+    <img src="6.png" alt="Модель 1" />
+    <img src="11.png" alt="Модель 2" />
+  </div>
+</section>
+
+    <section class="why-us">
+  <h2>Чому обирають нас?</h2>
+
+  <div class="why-grid">
+    <div class="why-item">
+      <img src="44.jpg" alt="Іконка досвіду">
+      <!-- <hr> -->
+      <h3>Досвід</h3>
+      <p>Наші майстри мають глибокі знання та професійний підхід, що дозволяє нам гарантувати високий рівень послуг.</p>
+    </div>
+
+    <div class="why-item">
+      <img src="8.jpg" alt="Іконка часу">
+      <!-- <hr> -->
+      <h3>Час</h3>
+      <p>Ми цінуємо ваш час і робимо все, щоб кожен візит був максимально комфортним, без очікувань та поспіху.</p>
+    </div>
+
+    <div class="why-item">
+      <img src="10.jpg" alt="Іконка безпеки">
+      <!-- <hr> -->
+      <h3>Безпека</h3>
+      <p>Ми забезпечуємо безпечні умови для кожного клієнта, дбаючи про спокій та професійність обслуговування.</p>
+    </div>
+
+    <div class="why-item">
+      <img src="12.jpg" alt="Іконка атмосфери">
+      <h3>Атмосфера</h3>
+      <p>Створюємо простір, де можна повністю розслабитися, насолодитися спокоєм і зануритися у світ турботи про себе.</p>
+    </div>
+
+  </div>
+</section>
+</section>
+
+<section id="services">
+<!-- Блок "Послуги" -->
+  <section class="services-section">
+  <h2 class="services-title">Послуги</h2>
+  <div class="services-layout">
+    <div class="service-item item1">
+      <img src="s.png" alt="Перукарські послуги">
+      <span class="white-text">Перукарські <br> послуги</span></span>
+    </div>
+    <div class="service-item item2">
+      <img src="0.png" alt="Візаж">
+      <span class="black-text">Візаж</span>
+    </div>
+    
+    <div class="service-item item4">
+      <img src="9.png" alt="Косметологія">
+       <span class="black-text">Косметологія</span>
+    </div>
+
+    <div class="service-item item5">
+      <img src="1.jpg" alt="Манікюр">
+      <span class="white-text">Манікюр</span>
+    </div>
+
+    <div class="service-item item3">
+      <img src="21.png" alt="Манікюр великий">
+      <span></span>
+    </div>
+  </div>
+</section>
+</section>
+
+<section id="gallery">
+<!-- Блок "галерея" -->
+<section class="gallery">
+  <h2 class="gallery-title">Галерея</h2>
+  <div class="gallery-grid">
+    <img src="3.jpg" alt="Галерея 1">
+    <img src="22.png" alt="Галерея 2">
+    <img src="23.jpg" alt="Галерея 3">
+    <img src="24.jpg" alt="Галерея 4">
+  </div>
+</section>
+</section>
+
+<section id="shares">
+<!-- Блок "акції" -->
+<section class="promo-section">
+<hr class="hrrr">
+  <h2 class="promo-title">Акції</h2>
+  <hr class="hrrr">
+   <p class="promo-description">
+    Слідкуйте за оновленнями та не пропустіть можливість побалувати себе улюбленими процедурами за ще приємнішою вартістю! Ваше задоволення – наш пріоритет.
+  </p>
+
+  <ul class="promo-list">
+    <li>«Щасливі години» – знижки з 10 до 13 дня.</li>
+    <li>«Beauty-абонемент» – купуєш кілька процедур одразу зі знижкою.</li>
+    <li>«Знижка за відгук» – залишаєш відгук в соцмережах і отримуєш бонус.</li>
+    <li>«Приведи подругу» – знижка для тебе і для друга, який зареєструється через тебе.</li>
+  </ul>
+<div class="promo-footer-wrapper">
+  <div class="promo-footer-images">
+    <img src="30.png" alt="Фон AMORA" class="background-img">
+    <img src="32.png" alt="Контакт" class="overlay-img">
+  </div>
+</div>
+</section>
+</section>
+
+ <section class="pricing">
+  <h2 class="section-title">Прайс</h2>
+  <div class="pricing-cards">
+    <div class="card">
+      <h3>Стрижка жіноча</h3>
+      <p>Модельна стрижка з укладкою</p>
+      <span class="price">400 грн</span>
+      <span class="sing">Записатися</span>
+    </div>
+
+     <div class="card">
+      <h3>Фарбування волосся</h3>
+      <p>В один тон, прикореневе</p>
+      <span class="price">від 1300 грн</span>
+      <span class="sing">Записатися</span>
+    </div>
+<div class="card">
+      <h3>Манікюр + гель-лак</h3>
+      <p>Класичний манікюр з покриттям</p>
+      <span class="price">500 грн</span>
+      <span class="sing">Записатися</span>
+    </div>
+
+    <div class="card">
+      <h3>Догляд за обличчям</h3>
+      <p>Очищення, масаж і зволоження</p>
+      <span class="price">600 грн</span>
+      <span class="sing">Записатися</span>
+    </div>
+
+<div class="card">
+      <h3>Макіяж</h3>
+      <p>Денний, вечірній,весільний</p>
+      <span class="price">від 1000 грн</span>
+      <span class="sing">Записатися</span>
+    </div>
+  </div>
+</section>
+<!-- Блок "Контакти" -->
+<section id="contacts">
+<section class="contact-section">
+  <div class="contact-wrapper">
+    <div class="contact-info">
+      <h2>Контакти</h2>
+
+      <p>
+  <a href="https://www.instagram.com/" target="_blank">
+    <img src="35.svg" alt="Instagram" class="icon">
+  </a>
+  <a href="https://www.facebook.com/?locale=uk_UA" target="_blank">
+    <img src="36.svg" alt="Facebook" class="icon">
+  </a>
+  </p>
+
+      <p><img src="37.svg" alt="Адреса" class="icon">
+         вулиця Євгена Коновальця, 36,<br>Львів, Львівська область, 79000</p>
+
+      <p><img src="38.svg" alt="Графік" class="icon">
+         Пн-Сб: 10.00–19.00<br>Нд: 10.00–19.00</p>
+
+      <p><img src="39.svg" alt="Телефон" class="icon">
+          <a href="tel:+380963370796">+38 (096) 337 07 96</a></p>
+
+      <p><img src="41.svg" alt="Пошта" class="icon">
+         salonAmora@gmail.com</p>
+    </div>
+
+    <div class="contact-map">
+  <a href="https://www.google.com/maps/place/вулиця+Євгена+Коновальця,+36,+Львів" target="_blank">
+    <img src="48.png" alt="..." loading="lazy" />
+  </a>
+    </div>
+  </div>
+</section>
+</section>
+</body>
+</html>
